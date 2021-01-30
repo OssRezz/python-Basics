@@ -1,0 +1,239 @@
+python ->
+
+Metodos:
+
+	round:
+		Sirve para controlar la cantidad de decimales
+		round(promedio,2)
+	;
+	
+	lower:
+		.lower() Convierte una cadena de caracteres a minisculas 
+		numero = int(input("Cual es el numero que deseas convertir?: " ))
+		numero = numero.lower()
+	;
+	
+	
+Comentarios
+	
+	#este es un comentario
+	"Esto es otro comentario"
+	
+	"""Esto es un comentario multilinea
+	linea1
+	linea2
+	linea3
+	"""
+
+
+Print:
+	
+	print = imprimir en pantalla print("")
+	
+	print("Hola " + nombre + ", vamos a realizar una suma")
+	
+	print("String: ", palabra)
+	print ("Entero: ", num_int)
+	print ("Float: ", num_float)
+	print ("Complejo: ", num_complex)
+
+
+Tipo de datos:
+	
+	Entero
+		numero = 15
+		print(type(numero))
+		out = <class 'int'>
+	
+	Flotante
+		numero_flotante = 15.5
+		print(type(numero_flotante))
+		out = <class 'float'>
+		
+	Numero complejo
+		numero_complejo =  5 + 6j
+		print(type(numero_complejo))
+		out = <class 'complex'>
+		
+	Strings
+		nombre = "Hola"
+		print(type(nombre))
+		out = <class 'str'>
+		
+	Boolean
+		verdadero_falso =  3 == 3
+		print(type(verdadero_falso))
+		out = <class 'bool'>
+		
+	;
+	int(), float(), strings("")
+
+
+Operadores logicos:
+	
+	and une con condiciones logicas y verifica que se cumpla o no.
+		if num_uno == 5 and num_dos >=5 :
+			instruccion()
+		else :
+			instruccion()
+	;
+	
+	or se encarga de identificar que una de las dos condiciones se cumplan.
+		if num_uno == 5 or num_dos >=5 :
+			instruccion()
+		else :
+			instruccion()
+	
+	;
+	
+	not funciona como no hahahaha (negacion)
+		if not num_dos >=5 :
+			instruccion()
+		else :
+			instruccion()
+	;
+	
+	Suma(+)
+	Resta(-)
+	Multriplicacion (*)
+	Exponente (**)
+	Modulo (%)
+	Division (/)
+	Division Entera (//)
+
+
+Strings:
+
+	+= asignacion sin borar el valor anterior (por asi decirlo agrupar?)	
+		mensaje += "Hola"
+		mensaje += " "
+		mensaje += "Ernesto "
+		print(mensaje)
+	;
+	
+	(Convertir un numero a texto)
+		numero_uno = 2
+		numero_dos = 3
+		resultado = numero_uno + numero_dos
+		resultado =  str (resultado)
+		print("El resultado de la suma es:" + resultado)
+	
+	;
+	
+	La busqueda:
+	
+	find nos permite obtener cadenas dentro de una cadena de caracteres
+	su resultado es la posicion de la cadena.
+	
+		mensaje = "Hola Ernesto"
+		buscar_subcadena =  mensaje.find("Ernesto")
+		
+		out: 5
+	;
+	
+	La extraccion:
+
+	[0:12] Sirve para extraer porciones de texte segundo la posicion
+	
+		mensaje = "Hola Ernesto"
+		extraer_subcadena =  mensaje[0:12]
+		print(extraer_subcadena)
+		
+		out:Hola Ernesto
+		
+	;
+	
+	La comparacion:
+	
+	La compracion, se utiliza para comparar dos cadenas de caracteres
+	==
+		mensaje_uno = "Hola Ernesto"
+		mensaje_dos = "Hola "
+		print(mensaje_uno == mensaje_dos)
+		
+		out = false
+
+	;
+	
+	
+Datos por teclado:
+	
+	input es el comando para solicitar datos por pantalla
+		palabra = input("introduce una palabra: ")
+		num_int = int(input("Introduce un numero: " ))
+		num_float = float(input("Introduce un numero float: "))
+		num_complex = complex(input("introduce un numero complejo: "))
+	;
+	
+Condicionales:
+
+	Sentencias condicionales simples:
+	Despues del if todo debe llevar un espacio de tabulador para que reconozca que es una instruccion.
+		if Condicionlogica :
+			Instruccion
+		
+		if promedio >= 7 :
+		print("tu promedio es mayor a 7 : ", promedio)
+		
+	;
+	
+	Sentencias condicionales compuesta:
+	 Si la primera no se cumple, se ejecuta la siguiente sentencia.
+		
+		if Condicionlogica :
+			instruccion
+		else:
+			instruccion
+			
+		if promedio >= 7 :
+			print("tu promedio es mayor a 7 : ", promedio)
+		else :
+			print("Eres un fracaso para la humanidad: ", promedio)
+	
+	;
+	
+	
+	Sentencias condicionales Multiples:
+		if numero == 1 :
+			print("Uno")
+		elif numero == 2 :
+			print("Dos")
+		elif numero == 3 :
+			print("Tres")
+		else :
+			print("El numero no existe")
+	
+	
+	;
+	
+	
+	Sentencias condicionales anidadas:
+	
+		if Condicionlogica :
+			instruccion()
+			
+			if Condicionlogica :
+			instruccion()
+			
+			elif Condicionlogica :
+			instruccion()
+			
+			else :
+			instruccion()
+			
+		elif Condicionlogica :
+			instruccion
+			
+			if Condicionlogica :
+			instruccion
+			
+			elif Condicionlogica :
+			instruccion
+			
+			else :
+			instruccion()
+		
+		else :
+			instruccion()
+			
+	;
